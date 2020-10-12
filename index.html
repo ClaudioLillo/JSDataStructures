@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Data Structures / Estructura de Datos</title>
+    <link rel="stylesheet" href="index.css"/>
+  </head>
+  <body>
+    <header>
+      <h1>Data Structures / Estructuras de Datos</h1>
+    </header>
+<!--Linked List-->
+    <section>
+      <h3>Linked List / Lista enlazada</h3>
+        <input
+          type="text"
+          id="data"
+          name="data"
+          value=""
+          autocomplete="off"
+          onchange="setData(this.value)"
+          />
+        <button onclick="addToList()">Add</button>
+        <button onclick="removeFromList()">Remove</button>
+        <div class="linkedList" id="linkedList"></div>
+    </section>
+    <script src="LinkedList.js"></script>
+
+<!--Hash Table-->
+    <section>
+      <h3>Hash Table / Tabla Hash</h3>
+      <form onSubmit="handleSubmit(event)">
+        <label for="valueToAdd">Value to add</label>
+        <input
+          type="number"
+          id="valueToAdd"
+          name="valueToAdd"
+          value=""
+          autocomplete="off"
+          
+        /><br/><br/>
+        <label for="key">Key to hash</label>
+        <input
+          type="text"
+          id="key"
+          name="key"
+          value=""
+          autocomplete="off"
+        />
+        <button type="submit">Submit</button>
+      </form>
+        <div class="container-flex">
+        <table class="hashTable" >
+          <thead><th>Hash</th><th>Value</th></thead>
+          <tbody id="hashTable"></tbody>
+        </table>
+        <div class="keys" id="usedKeys"></div>
+      </div>
+    </section>
+    <script src="HashTable.js"></script>
+  </body>
+
+
+</html>
