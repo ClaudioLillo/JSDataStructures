@@ -1,29 +1,4 @@
-function quickSort(array) {
-  console.log("largo: ",array.length);
-  if(array.length<=1){
-    return array;
-  }
-  let arr=[];
-  let pivot=0;
-  arr.push(array[pivot]);
-  let left=[];
-  let right=[];
-  for(let i=0;i<array.length;i++){
-    if(i==pivot){
-      continue;
-    }
-    if(array[i]<array[pivot]){
-      left.push(array[i]);
-    }
-    else if(array[i]>=array[pivot]){
-      right.push(array[i]);
-    }
-  }
-  console.log("left: ",left,", pivot: ",arr,", rigth: ",right);
-  //return("lista una");
-  return [...quickSort(left),...arr,...quickSort(right)];
 
-}
 
 function fusion(arr1,arr2){
   for(let i of arr2){

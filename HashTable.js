@@ -8,7 +8,6 @@ function multiDim(largo){
     return arr;
   }
   
-  
   function HashTable(largo){
     this.size=largo;
     this.conteiner=multiDim(largo);
