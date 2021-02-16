@@ -8,7 +8,7 @@ class Node{
 }
 
 class List{
-  cosntructor(){
+  constructor(){
     this.len = null;
     this.head = null;
   }
