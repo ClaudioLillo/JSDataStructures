@@ -1,5 +1,7 @@
 /*
 Memoization algorithm for Fibonacci. 
+Comparison between recursive and memoizations method can be done with compareComplexity function
+Avoid to using values above 40 if you don't want to kill your RAM.
 
 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
 f(0) = 0
@@ -37,4 +39,4 @@ const compareCompexity = (n)=>{
     console.log("Time Compexity rec vs memo: ", recTime+" | "+memoTime)
 }
 
-compareCompexity(30) //change n value to compare time complexity
+compareCompexity(40) //change n value to compare time complexity
